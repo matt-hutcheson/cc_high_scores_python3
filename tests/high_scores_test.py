@@ -31,6 +31,8 @@ class HighScoresTest(unittest.TestCase):
         self.assertEqual([901, 811, 765], personal_top_three(self.scores))
 
     # Test ordered from highest to lowest
+    def test_list_is_ordered_highest_to_lowest(self):
+        self.assertEqual([901, 811, 765, 764, 378, 234, 98, 54, 34, 32, 1], get_sorted_list(self.scores))
 
     # Test top three when there is a tie
 
