@@ -36,6 +36,9 @@ class HighScoresTest(unittest.TestCase):
         self.assertEqual([901, 811, 765, 764, 378, 234, 98, 54, 34, 32, 1], self.scores)
 
     # Test top three when there is a tie
+    def test_top_three_when_tied_values(self):
+        test_list = [34, 54, 765, 234, 1, 32, 764, 98, 901, 378, 811, 811]
+        self.assertEqual([901, 811, 811], personal_top_three(test_list))
 
     # Test top three when there are less than three
 
