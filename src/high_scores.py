@@ -3,8 +3,7 @@ def latest(scores):
 
 
 def personal_best(scores):
-    scores.sort(reverse=True)
-    return scores[0]
+    return max(scores)
 
 
 
