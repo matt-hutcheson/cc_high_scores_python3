@@ -17,7 +17,8 @@ class HighScoresTest(unittest.TestCase):
 
     # Test latest score (the last thing in the list)
 
-
+    def test_latest_score(self):
+        self.assertEqual(811, self.score[-1])
 
     # Test personal best (the highest score in the list)
 
