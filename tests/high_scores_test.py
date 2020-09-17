@@ -42,4 +42,8 @@ class HighScoresTest(unittest.TestCase):
 
     # Test top three when there are less than three
 
+    def test_top_three_scores_when_less_than_three_scores(self):
+        test_list = [34, 54]
+        self.assertEqual([54, 34], personal_top_three(test_list))
+
     # Test top three when there is only one
